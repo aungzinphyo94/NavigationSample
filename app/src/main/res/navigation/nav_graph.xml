@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/letterFragment">
+
+    <fragment
+        android:id="@+id/letterFragment"
+        android:name="com.dandt.navsample.LetterFragment"
+        android:label="fragment_letter"
+        tools:layout="@layout/fragment_letter" >
+        <action
+            android:id="@+id/action_letterFragment_to_wordFragment"
+            app:destination="@id/wordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/wordFragment"
+        android:name="com.dandt.navsample.WordFragment"
+        android:label="fragment_word"
+        tools:layout="@layout/fragment_word" />
+</navigation>
